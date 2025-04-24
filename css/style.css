@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+
+}
+:root {
+    --premery-color: #b80257;
+    --text-color: #ffffff;
+}
+html {
+    font-size: 62.5%;
+}
+h1, h2 ,h3 ,h4, h5, h6 {
+    font-family: "PT Sans", sans-serif;
+}
+
+
+/* start header form */
+
+.header {
+    width: 100%;
+    background-image: url(https://themazine.com/html/scholars-lms/images/home/banner-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.heaer-half {
+    min-height: 496px;
+    width: 1170px;
+    margin: 0 auto;
+    padding: 40px 0 0;
+    display: flex;
+    flex-direction: column;
+}
+.header-content {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+.header-wrap {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+}
+.header-form {
+    display: flex;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    gap: 30px;
+}
+.header-content h1 {
+    color: #535658;
+    margin-bottom: 20px;
+}
+.header .icon {
+    display: flex;
+}
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+.header-form > li > a {
+    display: flex;
+    flex-grow: 1;
+    color: var(--text-color);
+    text-decoration: none;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    font-family: "PT Sans", sans-serif;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.header-form > li > a, .heading-img {
+}
+a > i {
+    display: inline-block;
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+h1 {
+    font-size: 4rem;
+}
+.breadcrumb {
+    font-size: 1.6rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+.breadcrumb > li {
+    margin: auto;
+    font-size: 1.6rem;
+}
+.breadcrumb > li > a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.6rem;
+}
+
+/* start content */
+.wraper {
+    display: flex;
+    gap: 30px;
+}
+.content {
+    width: 1170px;
+    margin: 0 auto;
+}
+.content-list {
+    margin-top: 100px;
+}
+.course-menu {
+    flex-grow: 1;
+}
+.ul-course-menu {
+    display: flex;;
+    justify-content: center;
+    gap: 30px;
+}
+.wraper-search {
+    display: flex;
+    border: 1px solid #111;
+    border-radius: 8px;
+}
+.wraper-search > input {
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+}
+div > a > i {
+    margin: 8px 8px;
+}
+.wraper-search > a > i {
+    color: #111;
+}
+.wraper-list-search > ul {
+    border: 1px solid #111;
+    opacity: 0.5;
+}
+.wraper-list-search  li + li {
+    border-top: 1px solid #111;
+}
+.ul-search, .topics {
+    line-height: 40px;
+    font-size: 1.5rem;
+}
+.ul-search > li {
+    padding-left: 20px;
+}
+.topics {
+    font-weight: 700;
+}
+.ul-course-menu > li >a {
+    color: #111;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.ul-course-menu > li >a:hover {
+    background-color: #783df0;
+}
+.wrap-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    max-height: 30%;
+    margin-top: 70px;
+    border: 1px solid;
+    gap: 20px;
+}
+.box-text > h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.box-text > p {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    min-height: 50px;
+    overflow: auto;
+    overscroll-behavior: contain;
+}
+.box-img {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box-text {
+    padding: 10px;
+}
+.box-ul {
+    display: flex;
+    gap:10px;
+    font-size: 1.6rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.left {
+    display: flex;
+    align-items: center;
+}
+.btn {
+    color: #ffffff;
+    padding: 5px 10px;
+    box-shadow: 3px 3px 7px #bebebe;
+
+}
+.btn-free {
+    background-color: #783df0;
+    border: 1px solid ;
+    border-radius: 20px;
+}
+.distance {
+    margin: 0 5px;
+}
+.btn-main {
+    background-color: var(--premery-color);
+    border-radius: 20px;
+}
+.btn:hover {
+    box-shadow: inset 8px 5px 15px #c74481,
+    inset -8px -8px 15px #874c67;
+}
