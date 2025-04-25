@@ -264,15 +264,19 @@ a > i {
 }
 .btn-all-course {
     padding: 20px 50px;
-    background-color:#783df0;
+    background-color:var(--premery-color);
     border-radius: 25px;
     color: var(--text-color);
     font-size: 1.6rem;
+}
+.btn-all-course:hover {
+    background-color: #4f3dd3;
 }
 .wrap-level {
     width: 100%;
     height: 341px;
     background-color: #783df0;
+    margin-bottom: 100px;
 }
 .level {
     padding-top: 100px;
@@ -290,6 +294,67 @@ a > i {
     background-color: #9c7ae0;
     border-radius: 25px;
     font-size: 1.6rem;
+}
+.level-btn:hover {
+    background-color: #b80257;
+}
+.table {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0.8;
+}
+.table-box {
+    border: 1px solid #111;
+    border-radius: 8px;
+    width: 25%;
+    min-height: 25%;
+}
+.table-box:hover {
+    border: 2px solid #312ec8;
+}
+.price-btn:hover {
+    background-color: #4341c2;
+}
+.wrap-table {
+    width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+}
+.table-title {
+    margin-bottom: 100px;
+}
+.table-title > h1 {
+    margin-bottom: 10px;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.month {
+    align-content: flex-end;
+}
+.table-box > h1 {
+    font-size: 3rem;
+    border-bottom: 1px solid #111;
+    padding: 20px 60px;
+}
+.lish-table {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+}
+.price-btn {
+    padding: 10px 30px;
+    background-color: #ffffff;
+    border: 1px solid #111;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    color: #111;
 }
 
 
@@ -352,5 +417,4 @@ a > i {
 .footer-list > li > .title {
     font-size: 2rem;
     color: var(--text-color);
-    margin-bottom: 20px;
 }
