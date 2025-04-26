@@ -61,23 +61,18 @@ h1, h2 ,h3 ,h4, h5, h6 {
 .header-form-new {
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 0%;
     min-width: 200px;
     background-color: var(--text-color);
     font-size: 1.6rem;
     color: #111;
-    opacity: 0;
-    transform: scale(1);
-    transition: all 2s linear;
     display: none;
 }
 .header-form > li:hover .header-form-new{
-    transform: scale(1.5);
-    opacity: 1;
     display: block;
 }
 .header-form-new > li > a {
-    text-align: center;
+    padding-left: 10px;
     font-size: 1.6rem;
     line-height: 4.5rem;
     display: block;
@@ -204,13 +199,16 @@ div > a > i {
     padding-left: 20px;
 }
 .ul-search > li > a{
+    opacity: 0.8;
+    color: #000;
     position: relative;
     display: block;
-    left: 0px;
-    transition: left ease 0.4s;
+    transition: all ease 0.4s;
 }
 .ul-search > li > a:hover {
-    left: 10px;
+    opacity: 1;
+    translate: 10px;
+    color: rgb(79, 79, 206);
 }
 .topics {
     font-weight: 700;
@@ -273,8 +271,16 @@ div > a > i {
 .btn {
     color: var(--text-color);
     padding: 5px 10px;
-    box-shadow: 3px 3px 7px #bebebe;
-
+    box-shadow: 3px 3px 7px hsl(0, 0%, 75%);
+    top: 0;
+    left: 0;
+    position: relative;
+    transition: all ease 1s;
+}
+.btn:hover {
+    box-shadow: inset 8px 5px 15px #c74481,
+    inset -8px -8px 15px #874c67;
+    top: -5px;
 }
 .btn-free {
     background-color: #783df0;
@@ -289,11 +295,6 @@ div > a > i {
     border-radius: 20px;
 }
 
-.btn:hover {
-    box-shadow: inset 8px 5px 15px #c74481,
-    inset -8px -8px 15px #874c67;
-
-}
 .box:hover {
     border: 2px solid rgb(95, 60, 255);
 
@@ -303,6 +304,14 @@ div > a > i {
     margin-left: 30px;
     gap: 10px;
     margin-top: 45px;
+}
+.box-pages > li > .box-pages-btn:hover {
+    border: 1px solid;
+    color: #4173f1;
+    opacity: 1;
+}
+.box-pages-opacity {
+    opacity: 0.7;
 }
 .box-pages > li > a {
     padding: 5px 10px;
@@ -314,7 +323,6 @@ div > a > i {
     color: var(--text-color);
     font-weight: 500;
     background-color: #783df0;
-
 }
 
 /* start footer */
