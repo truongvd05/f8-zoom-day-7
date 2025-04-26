@@ -64,12 +64,17 @@ h1, h2 ,h3 ,h4, h5, h6 {
     left: 0%;
     min-width: 200px;
     background-color: var(--text-color);
+    opacity: 0;
     font-size: 1.6rem;
+    transform: scale(1 , 01.5rem);
+    transition: all 0.4s ease-in-out;
     color: #111;
-    display: none;
+    visibility: hidden;
 }
-.header-form > li:hover .header-form-new{
-    display: block;
+.header-form > .header-form-li:hover .header-form-new{
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
 }
 .header-form-new > li > a {
     padding-left: 10px;
@@ -77,7 +82,10 @@ h1, h2 ,h3 ,h4, h5, h6 {
     line-height: 4.5rem;
     display: block;
 }
-
+.header-form-new > li > a:hover {
+    background-color: var(--premery-color);
+    color: var(--text-color);
+}
 .header-form-hover > li > a{
     padding: 10px;
 }
@@ -98,7 +106,6 @@ h1, h2 ,h3 ,h4, h5, h6 {
 }
 .header-form > li > a {
     display: flex;
-    flex-grow: 1;
     color: var(--text-color);
     text-decoration: none;
     letter-spacing: 1.1px;
